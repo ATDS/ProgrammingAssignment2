@@ -51,11 +51,11 @@ cacheSolve <- function(x, ...) {
         }
         
         ## otherwise, get the matrix object and compute its inverse matrix
-		## assume that the matrix supplied is always invertible
+        ## assume that the matrix supplied is always invertible
         data <- x$get()                    
         inverseMatrix <- solve(data, ...)
         
-		## cache the inverse of matrix 
+        ## cache the inverse of matrix 
         x$setInverseMatrix(inverseMatrix)
         
         ## return the inverse of a matrix object
