@@ -12,7 +12,7 @@ makeCacheMatrix <- function(x = matrix()) {
     
         ## inverseMatrix is an object that is accessed in different environments that contains
         ## the inverse of a matrix object
-		inverseMatrix <- NULL
+        inverseMatrix <- NULL
         
         set <- function(y) {
                 x <<- y
@@ -25,7 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
         
         setInverseMatrix <- function(inverse) inverseMatrix <<- inverse
         
-		getInverseMatrix <- function() inverseMatrix
+        getInverseMatrix <- function() inverseMatrix
         
         ## return a list that contains getter and setter functions to a matrix object
         ## 1. get and set the value of the matrix
